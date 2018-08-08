@@ -1,4 +1,4 @@
-
+import Vue from 'vue'
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
 
@@ -36,3 +36,28 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
+export const isInViewPort = {
+  isLiteral: true,
+  inserted: (el, binding, vnode) => {
+    let func = () => {
+      let rect = el.getBoundingClientRect();
+      let inView = (
+          rect.width > 0 &&
+          rect.height > 0 &&
+          rect.top >= 0 &&
+          rect.bottom <=(window.innerHeight || document.documentElement.clientHeight)
+      );
+      if (inView) {
+        setTimeout(function () {
+          binding.value()
+        }, 1000)
+        window.removeEventListener('scroll', func);
+      }
+    };
+    window.addEventListener('scroll', func);
+
+    func();
+  },
+};
+
+Vue.directive('is-in-view-port', isInViewPort);

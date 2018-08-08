@@ -11,8 +11,12 @@
                <b-collapse is-nav id="nav_collapse">
                    <b-navbar-nav class="ml-auto mt-1 mt-lg-0">
                        <b-nav-item class="mr-3" href="/">Home</b-nav-item>
-                       <b-nav-item class="mr-3" href="/catalog">Catalog</b-nav-item>
-                       <b-nav-item class="mr-3" href="/order">Order</b-nav-item>
+                       <b-nav-item class="mr-3" href="/templates">Templates</b-nav-item>
+                       <b-nav-item-dropdown id="nav-dropdown-order" class="mr-3">
+                           <div slot="text">
+                               Order <i class="fa fa-angle-down"></i>
+                           </div>
+                       </b-nav-item-dropdown>
                        <b-nav-item href="/contacts">Contacts</b-nav-item>
                    </b-navbar-nav>
 

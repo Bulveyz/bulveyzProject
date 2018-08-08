@@ -75,6 +75,11 @@ nav .navbar-nav .btn {
     background-position: center center;
 }
 
+footer {
+    color: #fff;
+    background-color: #59287a;
+}
+
 @media (max-width: 988px) {
     .u-content-space-md {
         margin-bottom: 50px;

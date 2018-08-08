@@ -142,7 +142,7 @@
                         Subscribe to get the latest Updates, Products and Freebies
                     </h3>
                     <b-input-group class="w-lg-50 px-4 px-md-0 rounded">
-                        <b-form-input size="lg" placeholder="Enter you email address"></b-form-input>
+                        <b-form-input class="py-3" placeholder="Enter you email address"></b-form-input>
                         <b-input-group-append>
                             <b-btn variant="primary">Subscribe</b-btn>
                         </b-input-group-append>
