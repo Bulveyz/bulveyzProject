@@ -43,7 +43,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <overlay-hover img="img/another/demo_page.png">
+                        <overlay-hover data-aos="fade-left" img="img/another/demo_page.png">
                             <b-button href="/demo" variant="primary">Demo</b-button>
                         </overlay-hover>
                     </div>
@@ -73,7 +73,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6 pt-0 pt-lg-4">
-                        <hover-overlay :hover="false" img="img/another/deal.jpg">
+                        <hover-overlay data-aos="fade-left" :hover="false" img="img/another/deal.jpg">
                             <b-button variant="primary" herf="/order">To order a website</b-button>
                         </hover-overlay>
                     </div>
@@ -127,7 +127,7 @@
                         <b-btn href="/order" variant="primary">Create Plugin</b-btn>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-center d-lg-block">
-                        <img class="img-fluid float-lg-right" src="img/another/vue.png" alt="Vue logo">
+                        <img data-aos="fade-left" class="img-fluid float-lg-right" src="img/another/vue.png" alt="Vue logo">
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                     <h3 class="font-weight-light mb-lg-9 display-6">
                         Subscribe to get the latest Updates, Products and Freebies
                     </h3>
-                    <b-input-group class="w-lg-50 px-4 px-md-0 rounded">
+                    <b-input-group data-aos="fade-up" class="w-lg-50 px-4 px-md-0 rounded">
                         <b-form-input class="py-3" placeholder="Enter you email address"></b-form-input>
                         <b-input-group-append>
                             <b-btn variant="primary">Subscribe</b-btn>

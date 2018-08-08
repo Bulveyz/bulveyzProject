@@ -5,6 +5,9 @@ import BootstrapVue from 'bootstrap-vue'
 import Header from './layouts/Header'
 import Home from './pages/Home'
 import Footer from './layouts/Footer'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 Vue.use(BootstrapVue);
 
@@ -19,7 +22,10 @@ const header = new Vue({
 
 const app = new Vue({
   el: '#home',
-  render: h => h(Home)
+  created() {
+    Aos.init();
+  },
+  render: h => h(Home),
 });
 
 const footer = new Vue({
