@@ -1,0 +1,82 @@
+html, body {
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+nav {
+    transition: .5s;
+}
+
+.navbar-bg-onscroll {
+    padding: .5rem 1rem !important;
+    box-shadow: 5px 6px 9px -6px rgba(0, 0, 0, 0.15);
+    transition: .5s;
+}
+
+.js-parallax-header {
+    background: url("../img/header/header_background-min.jpg") no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.clouds {
+    background: url("../img/header/clouds.png") no-repeat;
+    min-height: 230px;
+    background-size: cover;
+    transform: translate3d(0, -98%, 0);
+}
+
+.navbar-brand {
+    font-size: 36px;
+    background-color: #59287a;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+nav .navbar-nav .nav-link,
+nav .navbar-nav .btn {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    background-color: #778beb;
+    border-color: #778beb;
+}
+
+.btn-jump:hover {
+    transform: translateY(-5px);
+}
+
+.title-letter-spacing {
+    letter-spacing: 0.05em;
+}
+
+.u-content-space-md {
+    margin-bottom: 220px
+}
+
+.counter {
+    background: url("../img/counter/Group-min.jpg") no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.subscribe {
+    background: url("../img/subscribe/subscribe_background.jpg") no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    background-position: center center;
+}
+
+@media (max-width: 988px) {
+    .u-content-space-md {
+        margin-bottom: 50px;
+    }
+}
